@@ -55,7 +55,7 @@ img { max-width: 100%; display: block; }
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.78fr);
   gap: clamp(46px, 6vw, 84px);
   align-items: center;
 }
@@ -120,10 +120,10 @@ h3 { font-size: 1.16rem; letter-spacing: -0.012em; margin-bottom: 10px; }
   filter: blur(0.3px);
 }
 .portrait-card {
-  position: relative; width: 100%; max-width: 450px; justify-self: end; background: white;
+  position: relative; width: 100%; max-width: 390px; justify-self: end; background: white;
   border: 1px solid var(--line); border-radius: 30px; overflow: hidden; box-shadow: var(--shadow);
 }
-.portrait-card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 26%; }
+.portrait-card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 18%; }
 
 .metrics { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,0.55); }
 .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
