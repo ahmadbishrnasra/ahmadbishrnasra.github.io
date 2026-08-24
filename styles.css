@@ -48,12 +48,13 @@ img { max-width: 100%; display: block; }
 .nav a:hover { color: var(--accent); }
 
 .hero {
-  padding: 72px 0 62px;
+  padding: 76px 0 64px;
   background:
-    radial-gradient(circle at 82% 16%, rgba(125, 51, 66, 0.18), transparent 30%),
-    radial-gradient(circle at 14% 10%, rgba(29, 43, 54, 0.11), transparent 29%),
-    linear-gradient(135deg, rgba(125, 51, 66, 0.045), transparent 34%),
-    linear-gradient(180deg, #faf7f3 0%, #f1eae4 100%);
+    radial-gradient(42% 60% at 86% 10%, rgba(125, 51, 66, 0.24), transparent 58%),
+    radial-gradient(36% 52% at 10% 2%, rgba(29, 43, 54, 0.16), transparent 56%),
+    radial-gradient(28% 32% at 48% 0%, rgba(214, 199, 188, 0.40), transparent 72%),
+    linear-gradient(135deg, rgba(125, 51, 66, 0.06), rgba(29, 43, 54, 0.03) 34%, transparent 72%),
+    linear-gradient(180deg, #fbf8f4 0%, #f1eae4 100%);
 }
 .hero-grid {
   display: grid;
@@ -62,11 +63,11 @@ img { max-width: 100%; display: block; }
   align-items: center;
 }
 .hero-copy {
-  background: rgba(255, 253, 249, 0.76);
-  border: 1px solid rgba(221, 213, 204, 0.86);
+  background: linear-gradient(180deg, rgba(255, 253, 249, 0.92), rgba(255, 250, 246, 0.84));
+  border: 1px solid rgba(217, 208, 198, 0.95);
   border-radius: 30px;
   padding: 32px 36px;
-  box-shadow: 0 16px 42px rgba(18, 32, 47, 0.05);
+  box-shadow: 0 20px 52px rgba(18, 32, 47, 0.06);
 }
 .eyebrow, .section-kicker {
   margin: 0 0 10px;
@@ -96,22 +97,24 @@ h3 { font-size: 1.2rem; letter-spacing: -0.005em; margin-bottom: 10px; }
 .portrait-shell::before {
   content: "";
   position: absolute;
-  inset: 8% 6% -6% 6%;
+  inset: 10% 7% -5% 7%;
   border-radius: 36px;
-  background: linear-gradient(135deg, rgba(125,51,66,0.15), rgba(29,43,54,0.14));
+  background:
+    linear-gradient(135deg, rgba(125,51,66,0.18), rgba(29,43,54,0.14)),
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.24), transparent 45%);
 }
 .portrait-card {
   position: relative;
-  width: min(100%, 500px);
-  aspect-ratio: 4 / 3;
-  background: rgba(255,255,255,0.94);
+  width: min(100%, 440px);
+  aspect-ratio: 5 / 6;
+  background: linear-gradient(180deg, rgba(255,255,255,0.97), rgba(248,245,241,0.93));
   border: 1px solid var(--line);
   border-radius: 32px;
   overflow: hidden;
   box-shadow: var(--shadow);
   padding: 16px;
 }
-.portrait-card img { width: 100%; height: 100%; border-radius: 22px; object-fit: cover; object-position: center 22%; }
+.portrait-card img { width: 100%; height: 100%; border-radius: 22px; object-fit: cover; object-position: center 18%; }
 
 .metrics { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: linear-gradient(90deg, rgba(125,51,66,0.07), rgba(29,43,54,0.07)); }
 .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
@@ -180,7 +183,7 @@ h3 { font-size: 1.2rem; letter-spacing: -0.005em; margin-bottom: 10px; }
 
 @media (max-width: 1080px) {
   .nav { gap: 15px; font-size: 0.87rem; }
-  .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(350px, 0.9fr); gap: 32px; }
+  .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(360px, 0.92fr); gap: 32px; }
   .hero-copy { padding: 28px 30px; }
   .work-grid, .focus-grid { grid-template-columns: repeat(2, 1fr); }
   .current-focus, .support-grid { grid-template-columns: 1fr; }
@@ -188,11 +191,11 @@ h3 { font-size: 1.2rem; letter-spacing: -0.005em; margin-bottom: 10px; }
 
 @media (max-width: 900px) {
   .nav { display: none; }
-  .hero { padding: 46px 0 48px; }
+  .hero { padding: 48px 0 50px; }
   .hero-grid, .split-intro, .two-col { grid-template-columns: 1fr; gap: 34px; }
   .hero-copy { padding: 28px 28px; }
   .portrait-shell { order: 2; }
-  .portrait-card { width: min(100%, 620px); max-width: 620px; aspect-ratio: 4 / 3; }
+  .portrait-card { width: min(100%, 500px); max-width: 500px; aspect-ratio: 5 / 5.8; }
   .metrics-grid { grid-template-columns: repeat(2, 1fr); }
   .metrics article:nth-child(2) { border-right: 0; }
   .metrics article:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
@@ -207,9 +210,9 @@ h3 { font-size: 1.2rem; letter-spacing: -0.005em; margin-bottom: 10px; }
   .nav-wrap { min-height: 62px; }
   .brand-name { display: inline; font-size: 0.84rem; }
   .brand-mark { width: 38px; height: 38px; border-radius: 12px; font-size: 0.72rem; }
-  .hero { padding: 22px 0 34px; }
+  .hero { padding: 26px 0 36px; }
   .hero-grid { gap: 22px; }
-  .hero-copy { padding: 22px 20px; border-radius: 22px; }
+  .hero-copy { padding: 22px 20px; border-radius: 22px; background: linear-gradient(180deg, rgba(255,253,249,0.94), rgba(255,250,246,0.88)); }
   h1 { font-size: clamp(2.9rem, 14vw, 4rem); margin-bottom: 14px; letter-spacing: -0.035em; }
   h2 { font-size: clamp(2.05rem, 10vw, 3rem); }
   h3 { font-size: 1.12rem; }
@@ -219,7 +222,7 @@ h3 { font-size: 1.2rem; letter-spacing: -0.005em; margin-bottom: 10px; }
   .hero-actions { gap: 9px; }
   .button { min-height: 44px; padding: 0 15px; font-size: 0.86rem; }
   .profile-links { gap: 12px 15px; font-size: 0.82rem; }
-  .portrait-card { width: 100%; max-width: none; aspect-ratio: 5 / 4; padding: 10px; border-radius: 24px; }
+  .portrait-card { width: 100%; max-width: 430px; margin: 0 auto; aspect-ratio: 5 / 5.8; padding: 10px; border-radius: 24px; }
   .portrait-card img { border-radius: 17px; object-position: center 18%; }
   .metrics-grid { grid-template-columns: repeat(2, 1fr); }
   .metrics article { padding: 20px 16px; border-bottom: 1px solid var(--line); }
@@ -258,5 +261,4 @@ h3 { font-size: 1.2rem; letter-spacing: -0.005em; margin-bottom: 10px; }
   body { background: white; }
   .section, .hero { padding: 28px 0; background: white; }
   .section-dark { color: black; background: white; }
-  .section-dark h2 { color: black; }
 }
