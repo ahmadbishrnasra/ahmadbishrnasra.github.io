@@ -1,0 +1,11 @@
+Website update – 26 September 2026
+
+Replace these files in the root of your GitHub Pages repository:
+- index.html
+- sitemap.xml
+- Ahmad_Bishr_Nasra_CV.pdf
+
+Inside the assets folder, replace:
+- social-card.png
+
+Do not replace your existing styles.css, hero/profile images, robots.txt, favicon, or Google verification file.
